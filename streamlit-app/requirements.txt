@@ -1,9 +1,9 @@
-# CPU-only PyTorch
+# PyTorch CPU-only compatible versions
 torch==2.5.1
-torchvision==0.16.1  # compatible with torch 2.5.1
+torchvision==0.16.1
 
-# Other dependencies
-streamlit==1.40.2
+# Streamlit app dependencies
+streamlit==1.51.0
 Pillow==9.5.0
 rich==14.2.0
 markdown-it-py==4.0.0
