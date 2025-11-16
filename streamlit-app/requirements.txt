@@ -1,4 +1,10 @@
-# Replace this line:
-# torch==2.5.1+cu118
-# With:
+# CPU-only PyTorch
 torch==2.5.1
+torchvision==0.16.1  # compatible with torch 2.5.1
+
+# Other dependencies
+streamlit==1.40.2
+Pillow==9.5.0
+rich==14.2.0
+markdown-it-py==4.0.0
+mdurl==0.1.2
