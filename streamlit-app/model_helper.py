@@ -14,13 +14,10 @@ class_names = [
 
 # Load the pre-trained CNN model
 def load_model():
-    global trained_model
-
-    if trained_model is None:
-        trained_model = VelocityFlowRegimnCNNWithRegularization(num_classes=len(class_names))
-        trained_model.load_state_dict(torch.load("saved_model.pth", map_location="cpu"))
-        trained_model.eval()
-
+    trained_model = VelocityFlowRegimnCNNWithRegularization()
+    model_path = os.path.join(os.path.dirname(__file__), "saved_model.pth")
+    trained_model.load_state_dict(torch.load(model_path, map_location="cpu"))
+    trained_model.eval()
     return trained_model
 
 
