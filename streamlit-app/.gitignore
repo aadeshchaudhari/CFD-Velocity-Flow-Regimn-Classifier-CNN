@@ -1,0 +1,13 @@
+# IDE files
+.idea/
+*.iml
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional: Ignore large data/images if not needed in repo
+Velocity_Flow_Regime/**/*.png
